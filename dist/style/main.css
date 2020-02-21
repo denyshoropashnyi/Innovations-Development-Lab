@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("/src/assets/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FontAwesome";
+  src: url("/src/assets/fonts/fa-regular-400.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+body {
+  font-family: "Roboto", "FontAwesome", sans-serif;
+}
+/*# sourceMappingURL=main.css.map */
