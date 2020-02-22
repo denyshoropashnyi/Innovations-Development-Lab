@@ -2,12 +2,63 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+    -webkit-transition: all .5s ease-in-out 0s;
+    transition: all .5s ease-in-out 0s;
 }
 
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
 
 body {
     font-family: $main-font, $second-font, sans-serif;
-    font-size: 16px;
+    font-size: 26px;
+    color: $text-font-color;
+}
+
+.wrapper {
+    height: 5751px;
+
+    width: 100%;
+    max-width: 2880px;
+    background: #ECEEF4;
+    margin: 0 auto;
+}
+
+.content {
+    max-width: 2280px;
+    background: #ffffff;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+
+    border: 2px solid;
+}
+
+a {
+    text-decoration: none;
+    color: $link-font-color;
+}
+
+button {
+    height: 100px;
+    width: 100%;
+    width: 335px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 1px solid $text-font-color;
+    border-radius: 9px;
+    cursor: pointer;
+
+    &:hover {
+        font-size: 35px;
+        text-decoration: underline;
+    }
 }

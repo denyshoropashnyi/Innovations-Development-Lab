@@ -6,10 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Innovations Development Lab</title>
     <link rel="stylesheet" href="dist/style/main.css">
+    <script defer src="dist/script/burger.js"></script>
 </head>
 
 <body>
-    My Work
+    <div class="wrapper">
+        <div class="logo">
+            <img class="logo__img" src="src/assets/pics/logo.png" alt="company logo">
+        </div>
+
+        <div class="content">
+            <header class="header">
+                <div class="container">
+                    <div class="header__content">
+                        <div class="header__body" id="headerBody">
+                            <div class="header__burger" id="headerBurger">
+                                <span class="header__burger"></span>
+                            </div>
+                            <div class="header__desc">
+                                <div class="header__title">
+                                    Your order
+                                </div>
+                                <nav class="header__menu">
+                                    <ul class="header__list" id="headerList">
+                                        <dl>
+                                            <dt class="header__title">
+                                                <a href="#" class="header__link"> Items </a>
+                                            </dt>
+                                            <dd> 2 documents </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt class="header__title">
+                                                <a href="#" class="header__link"> Details </a>
+                                            </dt>
+                                            <dd> 2 languages </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt class="header__title">
+                                                <a href="#" class="header__link"> Price </a>
+                                            </dt>
+                                            <dd> $ 696.06 </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt class="header__title">
+                                                <a href="#" class="header__link"> Delivery </a>
+                                            </dt>
+                                            <dd> 48 hours </dd>
+                                        </dl>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="header__btn">
+                                <button class="header__btn--order">Place order</button>
+                                <button class="header__btn--print">Print a quote</button>
+                            </div>
+                        </div>
+                        <div class="header__footer">
+                            <p class="header__title"> Help center</p>
+                            <p>If you need assistance while placing your order, contact one of our beloved Project
+                                Manager by phone or email.</p>
+                            <div class="header__links">
+                                <a href="tel:+9710555555"> +971 (0) 555 555</a>
+                                <a href="mailto:help@qtest.com"> help@qtest.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
 </body>
 
 </html>
