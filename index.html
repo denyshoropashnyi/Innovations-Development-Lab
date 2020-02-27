@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Innovations Development Lab</title>
     <link rel="stylesheet" href="dist/style/main.css">
-    <script defer src="dist/script/burger.js"></script>
+    <script async src="dist/script/burger-selectDataType.js"></script>
+    <script async src="dist/script/uploadedList.js"></script>
+    <script async src="dist/script/tone.js"></script>
+    <script async src="dist/script/urgency.js"></script>
 </head>
 
 <body>
@@ -15,7 +18,7 @@
             <img class="logo__img" src="src/assets/pics/logo.png" alt="company logo">
         </div>
 
-        <div class="content">
+        <form class="content">
             <header class="header">
                 <div class="container">
                     <div class="header__content">
@@ -31,25 +34,25 @@
                                     <ul class="header__list" id="headerList">
                                         <dl>
                                             <dt class="header__title">
-                                                <a href="#" class="header__link"> Items </a>
+                                                <a href="#uploadItems" class="header__link"> Items </a>
                                             </dt>
                                             <dd> 2 documents </dd>
                                         </dl>
                                         <dl>
                                             <dt class="header__title">
-                                                <a href="#" class="header__link"> Details </a>
+                                                <a href="#detailsItem" class="header__link"> Details </a>
                                             </dt>
                                             <dd> 2 languages </dd>
                                         </dl>
                                         <dl>
                                             <dt class="header__title">
-                                                <a href="#" class="header__link"> Price </a>
+                                                <a href="#toneItem" class="header__link"> Price </a>
                                             </dt>
                                             <dd> $ 696.06 </dd>
                                         </dl>
                                         <dl>
                                             <dt class="header__title">
-                                                <a href="#" class="header__link"> Delivery </a>
+                                                <a href="#urgentItem" class="header__link"> Delivery </a>
                                             </dt>
                                             <dd> 48 hours </dd>
                                         </dl>
@@ -57,7 +60,7 @@
                                 </nav>
                             </div>
                             <div class="header__btn">
-                                <button class="header__btn--order">Place order</button>
+                                <button class="header__btn--order" type="submit" value="submit">Place order</button>
                                 <button class="header__btn--print">Print a quote</button>
                             </div>
                         </div>
@@ -73,7 +76,183 @@
                     </div>
                 </div>
             </header>
-        </div>
+
+            <section class="section-main">
+                <div class="container">
+                    <div class="section-main__content">
+
+                        <div class="section-main__header">
+                            <h1 class="section-main__heading">
+                                Select what you want to translate
+                                <hr>
+                            </h1>
+                        </div>
+
+                        <div class="section-main__pics">
+                            <div class="section-main__what">
+                                <button class="selectTranslateBtn" id="translateWebsite" type="submit"></button>
+                                <p class="section-main__subheading">Website</p>
+                            </div>
+                            <div class="section-main__what selected">
+                                <button class="selectTranslateBtn" id="translateDocuments" type="submit"></button>
+                                <p class="section-main__subheading">Documents</p>
+                            </div>
+                            <div class="section-main__what">
+                                <button class="selectTranslateBtn" id="translateSocialAccount" type="submit"></button>
+                                <p class="section-main__subheading">SociaL Account</p>
+                            </div>
+                        </div>
+
+
+                        <div class="section-main__item--wrapper" id="uploadItems">
+                            <div class="section-main__item">
+                                <span class="section-main__title title--first">Upload your documents</span>
+                                <span class="section-main__subtitle">(Doc, Docx, Text, Pdf, Markdown)</span>
+                            </div>
+
+                            <div class="section-main__upload">
+                                <form action="#" class="section-main__form--upload">
+                                    <label for="userFile" id="userFileBtn">Upload a new file</label>
+                                    <input type="file" name="userFile" id="userFile"
+                                        accept=".doc,.docx,.xml,application/msword">
+                                </form>
+
+                                <table id="usersFilesListTable" class="hide">
+                                    <thead class="usersFilesListTable__thead">
+                                        <tr class="usersFilesListTable__tr">
+                                            <th>File Name</th>
+                                            <th>File Size</th>
+                                            <th>Number of Words</th>
+                                            <th>Remove</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="usersFilesListTable__tbody" id="infoArea">
+                                    </tbody>
+                                </table>
+
+                                <script type="text/template" id="infoTemplate">
+                                    <tr>
+                                        <td>{{name}}</td>
+                                        <td>{{size}}</td>
+                                        <td>{{words}}</td>
+                                        <td>{{delete}}</td>
+                                    </tr>
+                                </script>
+                            </div>
+
+                        </div>
+
+                        <div class="section-main__item--wrapper" id="detailsItem">
+                            <div class="section-main__item">
+                                <span class="section-main__title title--second">Choose your languages pairings</span>
+                            </div>
+
+                            <div class="section-main__details">
+                                <div class="section-main__language--from">
+                                    <p class="section-main__language--p">
+                                        <label for=" fromLang">From</label>
+                                    </p>
+
+                                    <select name="fromLang" id="fromLang">
+                                        <option value="english">English</option>
+                                        <option value="elvish">Elvish</option>
+                                        <option value="klingon">Klingon</option>
+                                        <option value="na’vi">Na’vi</option>
+                                        <option value="alienese">Alienese</option>
+                                    </select>
+                                </div>
+
+                                <div class="section-main__language--to">
+                                    <p class="section-main__language--p">
+                                        <label for="toLang">To</label>
+                                    </p>
+
+                                    <select name="toLang" id="fromLang">
+                                        <option value="english">Choose language</option>
+                                        <option value="english">English</option>
+                                        <option value="elvish">Elvish</option>
+                                        <option value="klingon">Klingon</option>
+                                        <option value="na’vi">Na’vi</option>
+                                        <option value="alienese">Alienese</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="two-section-main__item--wrapper">
+
+                            <div class="section-main__item--wrapper" id="toneItem">
+                                <div class="section-main__item">
+                                    <span class="section-main__title title--third">Select your desired tone</span>
+                                </div>
+
+                                <div class="tone__item--wrapper" id="tone__item">
+                                    <button class="toneButton tone__item--casual">Friendly / Casual</button>
+                                    <button class="toneButton tone__item--pro selected">Corporate /
+                                        Pro</button>
+                                    <button class="toneButton tone__item--formal">Media / Formal</button>
+                                </div>
+                            </div>
+
+
+                            <div class="section-main__item--wrapper" id="urgentItem">
+                                <div class="section-main__item">
+                                    <span class="section-main__title title--fourth">Tell us how urgent job is</span>
+                                </div>
+
+                                <div class="urgent__body">
+                                    <div class="timeline__line">
+                                        <div class="timeline__circle" id="non-urgent-order">
+                                        </div>
+
+                                        <div class="timeline__circle order--active" id="average-order">
+                                        </div>
+
+                                        <div class="timeline__circle" id="urgent-order">
+                                        </div>
+                                    </div>
+
+                                    <div class="timeline__desc">
+                                        <div class="timeline__item">
+                                            <p>I got time</p>
+                                        </div>
+
+                                        <div class="timeline__item desc--active">
+                                            <p>Average</p>
+                                        </div>
+
+                                        <div class="timeline__item">
+                                            <p>Yesterday</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline__info">
+                                    <p class="timeline__title">Timeline info</p>
+                                    <p class="timeline__text"> </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section-main__item--wrapper" id="signItem">
+                            <div class="section-main__item">
+                                <span class="section-main__title title--fifth">Sign up and choose a payment
+                                    method</span>
+                                <p class="section-main__subtitle">Already have an account with us? Sign in.</p>
+                            </div>
+                            <div class="section-main__form--main">
+                                <input type="text" name="userName" id="" minlength="8" maxlength="32" placeholder="Mathieu Mayer" required>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+            </section>
+
+
+        </form>
     </div>
 </body>
 

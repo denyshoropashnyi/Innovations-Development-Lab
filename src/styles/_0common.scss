@@ -23,7 +23,7 @@ body {
 
     width: 100%;
     max-width: 2880px;
-    background: #ECEEF4;
+    background: $main-bg-color;
     margin: 0 auto;
 }
 
@@ -37,8 +37,6 @@ body {
     max-width: 100%;
     padding: 0 10px;
     margin: 0 auto;
-
-    border: 2px solid;
 }
 
 a {
@@ -58,7 +56,107 @@ button {
     cursor: pointer;
 
     &:hover {
-        font-size: 35px;
+        font-size: 30px;
         text-decoration: underline;
     }
+}
+
+.section-main {
+    &__title {
+        font-size: 50px;
+        position: relative;
+        font-weight: 500;
+        color: $link-font-color;
+        margin-right: 20px;
+
+        &::before {
+            position: absolute;
+            left: -135px;
+            width: 75px;
+            height: 75px;
+            border: 1px solid;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            font-weight: 500;
+            color: $link-font-color;
+        }
+
+    }
+
+    &__item {
+        margin-bottom: 100px;
+
+        &--wrapper {
+            padding: 0 20px;
+            margin-bottom: 188px;
+
+        }
+    }
+
+    .title {
+        &--first {
+            &::before {
+                content: '1';
+            }
+        }
+
+        &--second {
+            &::before {
+                content: '2';
+            }
+        }
+
+        &--third {
+            &::before {
+                content: '3';
+            }
+        }
+
+        &--fourth {
+            &::before {
+                content: '4';
+            }
+        }
+
+        &--fifth {
+            &::before {
+                content: '5';
+            }
+        }
+    }
+}
+
+.selected {
+    border: 10px solid $selected-items-color;
+
+    &::after {
+        content: '';
+        background: url(../../src/assets/pics/check-mark.svg) 0 0 no-repeat;
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        top: -50px;
+        right: -50px;
+    }
+}
+
+#userFile {
+    display: none;
+}
+
+#userFileBtn {
+    border: 2px solid $text-font-color;
+    width: 460px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
 }

@@ -1,0 +1,40 @@
+.section-main__language--from,
+.section-main__language--to {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.section-main__item {
+    align-items: center;
+}
+
+#fromLang,
+#toLang {
+    font-size: 26px;
+    color: $text-font-color;
+
+    option {
+        font-size: 16px;
+    }
+}
+
+select {
+    width: 350px;
+    height: 100px;
+    margin: 20px 0;
+    margin-left: 50px;
+    background: $main-bg-color;
+    text-align: center;
+    text-align-last: center;
+    cursor: pointer;
+}
+
+.section-main__language--p {
+    max-width: 768px;
+    min-width: 100px;
+    font-weight: 600;
+    color: $link-font-color;
+    text-transform: uppercase;
+    text-align: right;
+}
