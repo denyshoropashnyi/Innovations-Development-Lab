@@ -3,3 +3,70 @@
         margin-top: 50px;
     }
 }
+
+.form-main {
+    &__item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__label {
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 20px;
+        margin-left: 15px;
+    }
+
+    &__input {
+        max-width: 500px;
+        height: 100px;
+        border: 2px solid $text-font-color;
+        font-size: 30px;
+        padding: 0 20px;
+        margin: 5px 20px;
+        border-radius: 9px;
+    }
+}
+
+.form-main__item {
+    margin: 20px;
+}
+
+.line-input__wrapper {
+    display: flex;
+}
+
+#userCardInput {
+    max-width: 750px;
+    background: url(../../src/assets/pics/visa.svg) 0 0 no-repeat;
+    background-position: right;
+}
+
+#expiryDate {
+    width: 400px;
+    text-align: center;
+}
+
+#cardCode {
+    width: 200px;
+}
+
+.footer {
+    background-color: #ffffff;
+    margin-bottom: 200px;
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        button {
+            margin: 50px;
+        }
+    }
+}
+
+#checkbox {
+    height: 50px;
+    width: 100px;
+}

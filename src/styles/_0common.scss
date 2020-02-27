@@ -19,12 +19,11 @@ body {
 }
 
 .wrapper {
-    height: 5751px;
-
     width: 100%;
     max-width: 2880px;
     background: $main-bg-color;
     margin: 0 auto;
+    padding-bottom: 200px;
 }
 
 .content {
@@ -159,4 +158,10 @@ button {
 
 .hide {
     display: none;
+}
+
+label,
+input,
+a {
+    cursor: pointer;
 }

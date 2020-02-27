@@ -238,19 +238,65 @@
                             <div class="section-main__item">
                                 <span class="section-main__title title--fifth">Sign up and choose a payment
                                     method</span>
-                                <p class="section-main__subtitle">Already have an account with us? Sign in.</p>
+                                <p class="section-main__subtitle">Already have an account with us? <a href="#">Sign
+                                        in.</a> </p>
                             </div>
-                            <div class="section-main__form--main">
-                                <input type="text" name="userName" id="" minlength="8" maxlength="32" placeholder="Mathieu Mayer" required>
-
+                            <div class="section-main__form-main">
+                                <div class="form-main__item">
+                                    <label for="userNameInput" class="form-main__label">Full Name</label>
+                                    <input type="text" name="userName" class="form-main__input" id="userNameInput"
+                                        minlength="8" maxlength="32" placeholder="Mathieu Mayer" required>
+                                </div>
+                                <div class="line-input__wrapper">
+                                    <div class="form-main__item">
+                                        <label for="userEmailInput" class="form-main__label">Email Address</label>
+                                        <input type="email" name="userEmail" class="form-main__input"
+                                            id="userEmailInput" placeholder="mathieu.mm@me.com"
+                                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                                    </div>
+                                    <div class="form-main__item">
+                                        <label for="userPassword" class="form-main__label">Choose a Password</label>
+                                        <input type="password" name="userPassword" class="form-main__input"
+                                            id="userPassword" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="line-input__wrapper">
+                                    <div class="form-main__item">
+                                        <label for="userCardInput" class="form-main__label">Card Number</label>
+                                        <input type="text" name="userCardInput" class="form-main__input"
+                                            id="userCardInput" minlength="13" maxlength="16" pattern="[0-9]{13,16}"
+                                            required>
+                                    </div>
+                                    <div class="form-main__item">
+                                        <label for="expiryDate" class="form-main__label">Expiry Date</label>
+                                        <input type="text" name="expiryDate" class="form-main__input" id="expiryDate"
+                                            placeholder="DD/MM/YY" required>
+                                    </div>
+                                    <div class="form-main__item">
+                                        <label for="cardCode" class="form-main__label">Code</label>
+                                        <input type="text" name="cardCode" class="form-main__input" id="cardCode"
+                                            maxlength="3" pattern="[0-9]{3}" required>
+                                    </div>
+                                </div>
                             </div>
-
                         </div>
-
-
                     </div>
-            </section>
 
+                    <footer class="footer">
+                        <div class="container">
+                            <div class="section-main__content">
+                                <div class="footer__btn">
+                                    <input type="checkbox" name="checkbox" id="checkbox" required checked>
+                                    <label for="checkbox">I agree to the Terms & Conditions</label>
+
+                                    <button class="header__btn--order" type="submit" value="submit">Place order</button>
+                                    <button class="header__btn--print">Print a quote</button>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+            </section>
 
         </form>
     </div>
