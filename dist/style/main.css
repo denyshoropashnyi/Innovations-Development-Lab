@@ -86,6 +86,7 @@ button:hover {
 .section-main__title::before {
   position: absolute;
   left: -135px;
+  bottom: 0;
   width: 75px;
   height: 75px;
   border: 1px solid;
@@ -424,9 +425,13 @@ a {
 }
 
 .section-main__header .section-main__heading {
+  max-width: 1000px;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 7px;
+  border-bottom: 2px solid #ABA9BB;
+  margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 .section-main__what {

@@ -31,7 +31,7 @@
                                     Your order
                                 </div>
                                 <nav class="header__menu">
-                                    <ul class="header__list" id="headerList">
+                                    <div class="header__list" id="headerList">
                                         <dl>
                                             <dt class="header__title">
                                                 <a href="#uploadItems" class="header__link"> Items </a>
@@ -56,7 +56,7 @@
                                             </dt>
                                             <dd> 48 hours </dd>
                                         </dl>
-                                    </ul>
+                                    </div>
                                 </nav>
                             </div>
                             <div class="header__btn">
@@ -84,7 +84,6 @@
                         <div class="section-main__header">
                             <h1 class="section-main__heading">
                                 Select what you want to translate
-                                <hr>
                             </h1>
                         </div>
 
@@ -111,11 +110,11 @@
                             </div>
 
                             <div class="section-main__upload">
-                                <form action="#" class="section-main__form--upload">
+                                <div class="section-main__form--upload">
                                     <label for="userFile" id="userFileBtn">Upload a new file</label>
                                     <input type="file" name="userFile" id="userFile"
                                         accept=".doc,.docx,.xml,application/msword">
-                                </form>
+                                </div>
 
                                 <table id="usersFilesListTable" class="hide">
                                     <thead class="usersFilesListTable__thead">
@@ -150,7 +149,7 @@
                             <div class="section-main__details">
                                 <div class="section-main__language--from">
                                     <p class="section-main__language--p">
-                                        <label for=" fromLang">From</label>
+                                        <label for="fromLang">From</label>
                                     </p>
 
                                     <select name="fromLang" id="fromLang">
@@ -167,7 +166,7 @@
                                         <label for="toLang">To</label>
                                     </p>
 
-                                    <select name="toLang" id="fromLang">
+                                    <select name="toLang" id="toLang">
                                         <option value="english">Choose language</option>
                                         <option value="english">English</option>
                                         <option value="elvish">Elvish</option>
@@ -289,15 +288,14 @@
                                 <div class="footer__btn">
                                     <input type="checkbox" name="checkbox" id="checkbox" required checked>
                                     <label for="checkbox">I agree to the Terms & Conditions</label>
-
                                     <button class="header__btn--order" type="submit" value="submit">Place order</button>
                                     <button class="header__btn--print">Print a quote</button>
                                 </div>
                             </div>
                         </div>
                     </footer>
+                </div>
             </section>
-
         </form>
     </div>
 </body>
