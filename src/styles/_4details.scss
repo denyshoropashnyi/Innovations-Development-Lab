@@ -1,11 +1,14 @@
 .section-main__language--from,
 .section-main__language--to {
+    display: -webkit-box;
     display: flex;
+    -webkit-box-align: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
 .section-main__item {
+    -webkit-box-align: center;
     align-items: center;
 }
 
@@ -26,6 +29,7 @@ select {
     margin-left: 50px;
     background: $main-bg-color;
     text-align: center;
+    -moz-text-align-last: center;
     text-align-last: center;
     cursor: pointer;
 }

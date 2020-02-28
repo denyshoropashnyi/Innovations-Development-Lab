@@ -24,6 +24,7 @@
 
 #uploadItems {
     .section-main__item {
+        display: -webkit-box;
         display: flex;
         flex-wrap: wrap;
     }

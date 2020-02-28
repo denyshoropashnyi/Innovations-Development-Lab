@@ -6,7 +6,10 @@
 
 .form-main {
     &__item {
+        display: -webkit-box;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
         flex-direction: column;
     }
 
@@ -33,6 +36,7 @@
 }
 
 .line-input__wrapper {
+    display: -webkit-box;
     display: flex;
 }
 
@@ -56,8 +60,11 @@
     margin-bottom: 200px;
 
     &__btn {
+        display: -webkit-box;
         display: flex;
+        -webkit-box-align: center;
         align-items: center;
+        -webkit-box-pack: end;
         justify-content: flex-end;
 
         button {

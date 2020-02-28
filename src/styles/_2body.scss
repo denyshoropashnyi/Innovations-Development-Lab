@@ -31,9 +31,15 @@
     border: 3px solid #bbbbbb;
     border-radius: 10px;
 
+    display: -webkit-box;
+
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
+    -webkit-box-pack: end;
     justify-content: end;
+    -webkit-box-align: center;
     align-items: center;
     background: $main-bg-color;
 
@@ -47,6 +53,7 @@
 }
 
 .section-main__pics {
+    display: -webkit-box;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;

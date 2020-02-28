@@ -9,7 +9,9 @@
     &__line {
         height: 25px;
         background-color: $main-bg-color;
+        display: -webkit-box;
         display: flex;
+        -webkit-box-pack: justify;
         justify-content: space-between;
         margin: 25px;
     }
@@ -23,7 +25,9 @@
     }
 
     &__desc {
+        display: -webkit-box;
         display: flex;
+        -webkit-box-pack: justify;
         justify-content: space-between;
         text-transform: uppercase;
         font-size: 26px;
@@ -47,8 +51,12 @@
 }
 
 #urgentItem {
+    display: -webkit-box;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
+    -webkit-box-pack: justify;
     justify-content: space-between;
 }
 

@@ -20,7 +20,6 @@ body {
 
 .wrapper {
     width: 100%;
-    // max-width: 2280px;
     background: $main-bg-color;
     margin: 0 auto;
     padding-bottom: 200px;
@@ -76,8 +75,11 @@ button {
             height: 75px;
             border: 1px solid;
             border-radius: 50%;
+            display: -webkit-box;
             display: flex;
+            -webkit-box-pack: center;
             justify-content: center;
+            -webkit-box-align: center;
             align-items: center;
             font-size: 30px;
             font-weight: 500;
@@ -150,8 +152,11 @@ button {
     border: 2px solid $text-font-color;
     width: 460px;
     font-size: 30px;
+    display: -webkit-box;
     display: flex;
+    -webkit-box-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
     align-items: center;
 }
 

@@ -57,11 +57,3 @@ function selectOrderUrgency(event) {
             break;
     }
 }
-
-
-
-// console.log(JSONObject[0]);
-
-// for (let key in JSONObject) {
-//     console.log(JSONObject[key])
-// }
