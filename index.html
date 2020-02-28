@@ -147,7 +147,7 @@
                                     <select name="fromLang" id="fromLang">
                                         <option value="english">English</option>
                                         <option value="elvish">Elvish</option>
-                                        <option value="klingon">Klingon</option>
+                                        <option value="klingon" selected>Klingon</option>
                                         <option value="na’vi">Na’vi</option>
                                         <option value="alienese">Alienese</option>
                                     </select>
@@ -158,7 +158,7 @@
                                     </p>
                                     <select name="toLang" id="toLang">
                                         <option value="english">English</option>
-                                        <option value="elvish">Elvish</option>
+                                        <option value="elvish" selected>Elvish</option>
                                         <option value="klingon">Klingon</option>
                                         <option value="na’vi">Na’vi</option>
                                         <option value="alienese">Alienese</option>
@@ -223,7 +223,7 @@
                                     <label for="userNameInput" class="form-main__label">Full Name</label>
                                     <input type="text" name="userName" class="form-main__input" id="userNameInput"
                                         minlength="8" maxlength="32" placeholder="Mathieu Mayer"
-                                        title="input your full name" required>
+                                        title="input your full name" required value="Van Der Sar">
                                 </div>
                                 <div class="line-input__wrapper">
                                     <div class="form-main__item">
@@ -231,13 +231,13 @@
                                         <input type="email" name="userEmail" class="form-main__input"
                                             id="userEmailInput" placeholder="mathieu.mm@me.com"
                                             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="input your email"
-                                            required>
+                                            required value="wrong-email">
                                     </div>
                                     <div class="form-main__item">
                                         <label for="userPassword" class="form-main__label">Choose a Password</label>
                                         <input type="password" name="userPassword" class="form-main__input"
                                             id="userPassword" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
-                                            title="input your password" required>
+                                            title="input your password" required value="asdasSASA52">
                                     </div>
                                 </div>
                                 <div class="line-input__wrapper">
@@ -245,18 +245,19 @@
                                         <label for="userCardInput" class="form-main__label">Card Number</label>
                                         <input type="text" name="userCardInput" class="form-main__input"
                                             id="userCardInput" minlength="13" maxlength="16" pattern="[0-9]{13,16}"
-                                            title="input your card number" required>
+                                            title="input your card number" required value="1234567891011120">
                                     </div>
                                     <div class="form-main__item">
                                         <label for="expiryDate" class="form-main__label">Expiry Date</label>
                                         <input type="text" name="expiryDate" class="form-main__input" id="expiryDate"
                                             placeholder="DD/MM/YY" title="use this format of data: DD/MM/YY"
-                                            minlength="8" maxlength="8" required>
+                                            minlength="8" maxlength="8" required value="22/09/91">
                                     </div>
                                     <div class="form-main__item">
                                         <label for="cardCode" class="form-main__label">Code</label>
                                         <input type="password" name="cardCode" class="form-main__input" id="cardCode"
-                                            maxlength="3" pattern="[0-9]{3}" title="input your cvv code" required>
+                                            maxlength="3" pattern="[0-9]{3}" title="input your cvv code" required
+                                            value="404">
                                     </div>
                                 </div>
                             </div>
