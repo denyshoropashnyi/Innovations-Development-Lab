@@ -244,7 +244,7 @@
 
 
 
-@media (min-width: 1025px) {
+@media (min-width: 1025px) and (max-width: 1439px) {
     .content {
         max-width: 1000px;
         background: #ffffff;
@@ -268,5 +268,14 @@
 
     .line-input__wrapper {
         flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 1440px) {
+    .content {
+        max-width: 1600px;
+        background: #ffffff;
+        margin: 0 auto;
+        overflow: hidden;
     }
 }
