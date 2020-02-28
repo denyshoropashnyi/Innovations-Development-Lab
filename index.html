@@ -61,7 +61,7 @@
                             </div>
                             <div class="header__btn">
                                 <button class="header__btn--order" type="submit" value="submit">Place order</button>
-                                <button class="header__btn--print">Print a quote</button>
+                                <button class="header__btn--print" id="headerBtnPrint">Print a quote</button>
                             </div>
                         </div>
                         <div class="header__footer">
@@ -80,7 +80,6 @@
             <section class="section-main">
                 <div class="container">
                     <div class="section-main__content">
-
                         <div class="section-main__header">
                             <h1 class="section-main__heading">
                                 Select what you want to translate
@@ -89,33 +88,30 @@
 
                         <div class="section-main__pics">
                             <div class="section-main__what">
-                                <button class="selectTranslateBtn" id="translateWebsite" type="submit"></button>
+                                <button class="selectTranslateBtn" id="translateWebsite" value="website"></button>
                                 <p class="section-main__subheading">Website</p>
                             </div>
                             <div class="section-main__what selected">
-                                <button class="selectTranslateBtn" id="translateDocuments" type="submit"></button>
+                                <button class="selectTranslateBtn" id="translateDocuments" value="document"></button>
                                 <p class="section-main__subheading">Documents</p>
                             </div>
                             <div class="section-main__what">
-                                <button class="selectTranslateBtn" id="translateSocialAccount" type="submit"></button>
+                                <button class="selectTranslateBtn" id="translateSocialAccount" value="social"></button>
                                 <p class="section-main__subheading">SociaL Account</p>
                             </div>
                         </div>
-
 
                         <div class="section-main__item--wrapper" id="uploadItems">
                             <div class="section-main__item">
                                 <span class="section-main__title title--first">Upload your documents</span>
                                 <span class="section-main__subtitle">(Doc, Docx, Text, Pdf, Markdown)</span>
                             </div>
-
                             <div class="section-main__upload">
                                 <div class="section-main__form--upload">
                                     <label for="userFile" id="userFileBtn">Upload a new file</label>
                                     <input type="file" name="userFile" id="userFile"
-                                        accept=".doc,.docx,.xml,application/msword">
+                                        accept=".doc,.docx,.xml,application/msword" required>
                                 </div>
-
                                 <table id="usersFilesListTable" class="hide">
                                     <thead class="usersFilesListTable__thead">
                                         <tr class="usersFilesListTable__tr">
@@ -128,7 +124,6 @@
                                     <tbody class="usersFilesListTable__tbody" id="infoArea">
                                     </tbody>
                                 </table>
-
                                 <script type="text/template" id="infoTemplate">
                                     <tr>
                                         <td>{{name}}</td>
@@ -138,20 +133,17 @@
                                     </tr>
                                 </script>
                             </div>
-
                         </div>
 
                         <div class="section-main__item--wrapper" id="detailsItem">
                             <div class="section-main__item">
                                 <span class="section-main__title title--second">Choose your languages pairings</span>
                             </div>
-
                             <div class="section-main__details">
                                 <div class="section-main__language--from">
                                     <p class="section-main__language--p">
                                         <label for="fromLang">From</label>
                                     </p>
-
                                     <select name="fromLang" id="fromLang">
                                         <option value="english">English</option>
                                         <option value="elvish">Elvish</option>
@@ -160,14 +152,11 @@
                                         <option value="alienese">Alienese</option>
                                     </select>
                                 </div>
-
                                 <div class="section-main__language--to">
                                     <p class="section-main__language--p">
                                         <label for="toLang">To</label>
                                     </p>
-
                                     <select name="toLang" id="toLang">
-                                        <option value="english">Choose language</option>
                                         <option value="english">English</option>
                                         <option value="elvish">Elvish</option>
                                         <option value="klingon">Klingon</option>
@@ -179,47 +168,36 @@
                         </div>
 
                         <div class="two-section-main__item--wrapper">
-
                             <div class="section-main__item--wrapper" id="toneItem">
                                 <div class="section-main__item">
                                     <span class="section-main__title title--third">Select your desired tone</span>
                                 </div>
-
                                 <div class="tone__item--wrapper" id="tone__item">
                                     <button class="toneButton tone__item--casual">Friendly / Casual</button>
-                                    <button class="toneButton tone__item--pro selected">Corporate /
-                                        Pro</button>
+                                    <button class="toneButton tone__item--pro selected">Corporate / Pro</button>
                                     <button class="toneButton tone__item--formal">Media / Formal</button>
                                 </div>
                             </div>
-
-
                             <div class="section-main__item--wrapper" id="urgentItem">
                                 <div class="section-main__item">
                                     <span class="section-main__title title--fourth">Tell us how urgent job is</span>
                                 </div>
-
                                 <div class="urgent__body">
                                     <div class="timeline__line">
                                         <div class="timeline__circle" id="non-urgent-order">
                                         </div>
-
                                         <div class="timeline__circle order--active" id="average-order">
                                         </div>
-
                                         <div class="timeline__circle" id="urgent-order">
                                         </div>
                                     </div>
-
                                     <div class="timeline__desc">
                                         <div class="timeline__item">
                                             <p>I got time</p>
                                         </div>
-
                                         <div class="timeline__item desc--active">
                                             <p>Average</p>
                                         </div>
-
                                         <div class="timeline__item">
                                             <p>Yesterday</p>
                                         </div>
@@ -244,20 +222,22 @@
                                 <div class="form-main__item">
                                     <label for="userNameInput" class="form-main__label">Full Name</label>
                                     <input type="text" name="userName" class="form-main__input" id="userNameInput"
-                                        minlength="8" maxlength="32" placeholder="Mathieu Mayer" required>
+                                        minlength="8" maxlength="32" placeholder="Mathieu Mayer"
+                                        title="input your full name" required>
                                 </div>
                                 <div class="line-input__wrapper">
                                     <div class="form-main__item">
                                         <label for="userEmailInput" class="form-main__label">Email Address</label>
                                         <input type="email" name="userEmail" class="form-main__input"
                                             id="userEmailInput" placeholder="mathieu.mm@me.com"
-                                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="input your email"
+                                            required>
                                     </div>
                                     <div class="form-main__item">
                                         <label for="userPassword" class="form-main__label">Choose a Password</label>
                                         <input type="password" name="userPassword" class="form-main__input"
                                             id="userPassword" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
-                                            required>
+                                            title="input your password" required>
                                     </div>
                                 </div>
                                 <div class="line-input__wrapper">
@@ -265,17 +245,18 @@
                                         <label for="userCardInput" class="form-main__label">Card Number</label>
                                         <input type="text" name="userCardInput" class="form-main__input"
                                             id="userCardInput" minlength="13" maxlength="16" pattern="[0-9]{13,16}"
-                                            required>
+                                            title="input your card number" required>
                                     </div>
                                     <div class="form-main__item">
                                         <label for="expiryDate" class="form-main__label">Expiry Date</label>
                                         <input type="text" name="expiryDate" class="form-main__input" id="expiryDate"
-                                            placeholder="DD/MM/YY" required>
+                                            placeholder="DD/MM/YY" pattern="(\d{1,2}/\d{1,2}/\d{4})"
+                                            title="use this format of data: DD/MM/YY" required>
                                     </div>
                                     <div class="form-main__item">
                                         <label for="cardCode" class="form-main__label">Code</label>
-                                        <input type="text" name="cardCode" class="form-main__input" id="cardCode"
-                                            maxlength="3" pattern="[0-9]{3}" required>
+                                        <input type="password" name="cardCode" class="form-main__input" id="cardCode"
+                                            maxlength="3" pattern="[0-9]{3}" title="input your cvv code" required>
                                     </div>
                                 </div>
                             </div>
@@ -289,7 +270,7 @@
                                     <input type="checkbox" name="checkbox" id="checkbox" required checked>
                                     <label for="checkbox">I agree to the Terms & Conditions</label>
                                     <button class="header__btn--order" type="submit" value="submit">Place order</button>
-                                    <button class="header__btn--print">Print a quote</button>
+                                    <button class="header__btn--print" id="footerBtnPrint">Print a quote</button>
                                 </div>
                             </div>
                         </div>

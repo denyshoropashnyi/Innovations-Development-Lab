@@ -1,7 +1,8 @@
 'use strict';
 
+const headerBtnPrint = document.getElementById('headerBtnPrint');
+const footerBtnPrint = document.getElementById('footerBtnPrint');
 const headerBurger = document.getElementById('headerBurger');
-// const headerBody = document.getElementById('headerBody');
 const headerList = document.getElementById('headerList');
 
 headerBurger.addEventListener('click', switchBurger);
@@ -28,5 +29,9 @@ function selectDataType(event) {
             sectionMainWhat[i].classList.remove('selected');
         }
         target.parentNode.classList.add('selected');
+        event.preventDefault();
     }
 }
+
+headerBtnPrint.addEventListener('click', (e) => window.print());
+footerBtnPrint.addEventListener('click', (e) => window.print());
