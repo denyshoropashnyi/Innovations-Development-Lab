@@ -20,7 +20,7 @@ body {
 
 .wrapper {
     width: 100%;
-    max-width: 2880px;
+    // max-width: 2280px;
     background: $main-bg-color;
     margin: 0 auto;
     padding-bottom: 200px;
@@ -83,7 +83,6 @@ button {
             font-weight: 500;
             color: $link-font-color;
         }
-
     }
 
     &__item {
@@ -92,7 +91,6 @@ button {
         &--wrapper {
             padding: 0 20px;
             margin-bottom: 175px;
-
         }
     }
 
@@ -165,4 +163,16 @@ label,
 input,
 a {
     cursor: pointer;
+}
+
+form input {
+    &:invalid {
+        background: url(../../src/assets/pics/close.svg) 95% 50% no-repeat;
+        background-size: 50px;
+    }
+
+    &:valid {
+        background: url(../../src/assets/pics/check-mark.svg) 95% 50% no-repeat;
+        background-size: 50px;
+    }
 }

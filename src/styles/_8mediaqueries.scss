@@ -1,0 +1,249 @@
+@media (min-width: 320px) and (max-width: 768px) {
+    .content {
+        overflow: hidden;
+    }
+
+    .header__content {
+        flex-wrap: wrap;
+    }
+
+    .header__body {
+        padding: 25px 5px;
+    }
+
+    .header__btn {
+        .header__btn--order {
+            width: 100%;
+        }
+    }
+
+    #headerBody {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .header__desc .header__title {
+        width: initial;
+    }
+
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+
+        &::before,
+        &::after {
+            content: '';
+            background-color: $main-color;
+            position: absolute;
+            width: 50px;
+            height: 3px;
+            cursor: pointer;
+        }
+
+        &::before {
+            top: 0;
+        }
+
+        &::after {
+            bottom: 0;
+        }
+
+        span {
+            position: absolute;
+            background-color: $main-color;
+            width: 50px;
+            height: 3px;
+            top: 8px;
+        }
+    }
+
+    .header__list {
+        position: relative;
+        flex-direction: column;
+        opacity: 0;
+
+        &.active {
+            opacity: 1;
+        }
+    }
+
+    .header__menu {
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .header__desc .header__title {
+
+        &::before {
+            top: -10px;
+        }
+
+        &.active {
+            display: block;
+        }
+    }
+
+    .header__burger.active {
+        &::before {
+            transform: rotate(45deg);
+            top: 9px;
+        }
+
+        span {
+            transform: scale(0);
+        }
+
+        &::after {
+            transform: rotate(-45deg);
+            bottom: 9px;
+        }
+    }
+
+    .header__footer {
+        padding: 0 5px;
+        border-left: none;
+    }
+
+    .section-main__what {
+        margin: 10px;
+    }
+
+    .line-input__wrapper {
+        flex-wrap: wrap;
+    }
+
+    .footer__btn {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header__btn button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .header__links {
+        flex-direction: column;
+    }
+
+    #userFileBtn::after {
+        display: none;
+    }
+
+    .selected::after {
+        top: 0;
+        right: 0;
+    }
+
+    .form input:valid {
+        background: none;
+    }
+
+    .line-input__wrapper {
+        display: block;
+    }
+
+    #expiryDate,
+    #cardCode {
+        width: auto;
+    }
+
+    .tone__item--wrapper {
+        display: block;
+
+        button {
+            width: auto;
+            display: block;
+
+            &::before {
+                top: -18px;
+                left: 0px;
+
+            }
+        }
+    }
+
+    .two-section-main__item--wrapper .section-main__item--wrapper {
+        width: auto;
+        min-width: 310px;
+    }
+
+    .timeline__desc {
+        font-size: 16px;
+    }
+
+    .timeline__info {
+        padding: 5px;
+    }
+
+    .timeline__title::before {
+        display: none;
+    }
+
+    #userFileBtn {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .content {
+        overflow: hidden;
+    }
+
+    .section-main__what {
+        margin: 10px;
+    }
+
+    .header__content {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .header__footer {
+        border-left: none;
+    }
+
+    .section-main__heading {
+        font-size: 30px;
+    }
+
+    .section-main__header .section-main__heading {
+        width: 100%;
+    }
+
+    .line-input__wrapper {
+        flex-wrap: wrap;
+    }
+
+    .header__btn button {
+        margin: 10px 0;
+    }
+}
+
+
+
+@media (min-width: 1025px) {
+    .content {
+        overflow: hidden;
+    }
+
+    .header__content {
+        flex-direction: row;
+    }
+
+    .header__footer {
+        border-left: none;
+    }
+
+    .header__btn button {
+        margin: 10px 0;
+    }
+
+    .line-input__wrapper {
+        flex-wrap: wrap;
+    }
+}
