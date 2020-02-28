@@ -1,5 +1,8 @@
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 759px) {
     .content {
+        max-width: 300px;
+        background: #ffffff;
+        margin: 0 auto;
         overflow: hidden;
     }
 
@@ -200,8 +203,12 @@
 
 @media (min-width: 769px) and (max-width: 1024px) {
     .content {
+        max-width: 760px;
+        background: #ffffff;
+        margin: 0 auto;
         overflow: hidden;
     }
+
 
     .section-main__what {
         margin: 10px;
@@ -239,6 +246,9 @@
 
 @media (min-width: 1025px) {
     .content {
+        max-width: 1000px;
+        background: #ffffff;
+        margin: 0 auto;
         overflow: hidden;
     }
 

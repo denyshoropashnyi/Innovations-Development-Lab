@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Roboto";
-  src: url("src/assets/fonts/Roboto-Regular.ttf") format("truetype");
+  src: url("../../src/assets/fonts/Roboto-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -41,7 +41,7 @@ body {
 }
 
 .content {
-  max-width: 2280px;
+  max-width: 1380px;
   background: #ffffff;
   margin: 0 auto;
 }
@@ -789,8 +789,11 @@ select {
   width: 100px;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 759px) {
   .content {
+    max-width: 300px;
+    background: #ffffff;
+    margin: 0 auto;
     overflow: hidden;
   }
   .header__content {
@@ -952,6 +955,9 @@ select {
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .content {
+    max-width: 760px;
+    background: #ffffff;
+    margin: 0 auto;
     overflow: hidden;
   }
   .section-main__what {
@@ -985,6 +991,9 @@ select {
 
 @media (min-width: 1025px) {
   .content {
+    max-width: 1000px;
+    background: #ffffff;
+    margin: 0 auto;
     overflow: hidden;
   }
   .header__content {

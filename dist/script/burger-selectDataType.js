@@ -31,6 +31,8 @@ function selectDataType(event) {
         target.parentNode.classList.add('selected');
         event.preventDefault();
     }
+    // event.preventDefault();
+
 }
 
 headerBtnPrint.addEventListener('click', (e) => window.print());
