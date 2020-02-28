@@ -76,3 +76,13 @@
         background: url(../../src/assets/pics/social.png) 50% 50% no-repeat;
     }
 }
+
+form input:invalid {
+    background: url(../../src/assets/pics/close.svg) 95% 50% no-repeat;
+    background-size: 50px;
+}
+
+form input:valid {
+    background: url(../../src/assets/pics/check-mark.svg) 95% 50% no-repeat;
+    background-size: 50px;
+}
