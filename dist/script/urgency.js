@@ -11,7 +11,7 @@ const timelineDesc = document.getElementsByClassName('timeline__item');
 
 const xhr = new XMLHttpRequest();
 
-xhr.open("GET", "/../json/urgency.json", false);
+xhr.open("GET", "json/urgency.json", false);
 
 xhr.send(null)
 
